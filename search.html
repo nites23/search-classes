@@ -1,0 +1,137 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+<style>
+#state{
+background-color: lime;
+}
+#left{
+color: purple;
+font-size: 17px;
+}
+h1{
+color: green;
+font-size:48px;
+}
+h3{
+color: orange;
+font-size:48px;
+}
+h5{
+color: yellow;
+font-size:48px;
+}
+body{
+background-attachment: fixed;
+color: white;
+}
+
+#city{
+background-color: skyblue;
+}
+#station{
+background-color: orange;
+}
+.name{
+background-color: silver;
+}
+#na{
+color: white;
+}
+#n{
+color: white;
+}
+#but{
+background-color: black;
+background-size: 80% 80%;
+}
+#pa{
+
+color: white;
+}
+#form{
+background-color: black;
+background-size: 80% 80%;
+}
+</style>
+
+<title>
+search
+</title>
+</headt>
+<body bgcolor="black"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button align="left-side"><a href="signup.html">SIGN UP</a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button align="left-side"><a href="login.html">LOGIN</a></button><br>
+<hr><hr><nav>
+<a href="home.html">HOME</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a onclick="alert('you are already on search page')" href="">SEARCH</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="about.html">ABOUT</a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<hr><hr>
+
+</nav>
+<h1>WELCOME</h1>
+<br>
+<br>
+<h3>TO SEARCH CLASSESS</H3> <br><br>
+<p align="left-side" id="left">::--these side will provide a available classess in you locality.<br>::--which you select from the selector.<br>
+</p>
+<br>
+<button id="but"><form method='post' id="form">
+<p id="na">name:</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<input type="text" class="name" placeholder="enter name" id="name"><br>
+
+<p id="n">age:</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<input type="text" class="name" placeholder="enter age" id="age"><br><br><br>
+
+<select id="state" name="state" value="state">
+<option id="state" name="state" value="state">select state</option>
+<option id="state" name="state" value="maharastra">maharastra</option>
+<option id="state" name="state" value="kanpur">kanpur</option>
+<option id="state" name="state" value="gujrat">gujrat</option>
+<option id="state" name="state" value="delhi">delhi</option>
+<option id="state" name="state" value="mp">madhya pradesh</option>x-loud</select><br><br>
+
+<select id="city" value="city" name="city">
+<option value="city">select city</option>
+<option value="mumbai">mumbai</option>
+<option value="">delhi</option></select><br><br>
+
+<select id="station" value="stattion" name="station">
+<option id="station" value="station">select station</option>
+<option id="station" value="kandivali">kandivali</option>
+<option id="station" value="malad">malad</option>
+<option id="station" value="borivali">borivali</option>
+<option id="station" value="dahisar">dahisar</option>
+<option id="station" value="miraroad">mira road</option>
+<option id="station" value="bhainder">bhainder</option>
+</select><br><br>
+<input type="submit" value="submit" onclick="search()">
+
+</form></button>
+<BR>
+<script text="text/javascript">
+function search(){
+var state=document.getElementById('state').value;
+var name=document.getElementById('name').value;
+var station=document.getElementById('station').value;
+alert(state+station);
+
+if(state=='maharastra'){
+if(station=='kandivali'){
+document.write("<h1 style='color:green'><i>WELCOME back "+name+" !!!!!!!!!!</i></h1> <h4>the available classess in your location are:</h4>");
+document.write("<a href='https:/sureshdani.org.in'>sureshdani classess</a>");
+}
+else{
+if(station=='borivali'){
+document.write("<h1 style='color:green'><i>WELCOME back "+name+" !!!!!!!!!!!</i></h1><h3>the available classess in your location are:</h3><br><h1><jagdesh bhai dani classess.</h3><br><a href='https://jdcs.in'>jagdesh dani</a><br><h2>suresh dani classess</h2><a href='https://nkc.org.in'>sureshdani classess</a>");
+}}}
+}
+
+</script>
+<h5><i> select your location</i></h5>
+
+
+</body>
+</html>
